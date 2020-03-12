@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/view/index'
 import shoppingCart from '@/view/shoppingCart'
+import my from '@/view/my'
+import express from '@/view/express'
 
 Vue.use(Router)
 const router = new Router({
@@ -16,6 +18,16 @@ const router = new Router({
       path: '/shoppingCart',
       name: 'shoppingCart',
       component: shoppingCart
+    },
+    {
+      path: '/my',
+      name: 'my',
+      component: my
+    },
+    {
+      path: '/express',
+      name: 'express',
+      component: express
     }
   ]
 })

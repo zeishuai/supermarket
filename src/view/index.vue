@@ -64,6 +64,26 @@
           value: 1,
           text: '康师傅方便面大桶康师傅方便面大桶',
           url: 'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=206733228,1637722865&fm=26&gp=0.jpg'
+        },{
+          id: '5',
+          value: 1,
+          text: '康师傅方便面大桶康师傅方便面大桶',
+          url: 'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=206733228,1637722865&fm=26&gp=0.jpg'
+        },{
+          id: '5',
+          value: 1,
+          text: '康师傅方便面大桶康师傅方便面大桶',
+          url: 'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=206733228,1637722865&fm=26&gp=0.jpg'
+        },{
+          id: '5',
+          value: 1,
+          text: '康师傅方便面大桶康师傅方便面大桶',
+          url: 'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=206733228,1637722865&fm=26&gp=0.jpg'
+        },{
+          id: '5',
+          value: 1,
+          text: '康师傅方便面大桶康师傅方便面大桶',
+          url: 'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=206733228,1637722865&fm=26&gp=0.jpg'
         }]
       };
     },
@@ -101,6 +121,7 @@
 <style scoped lang="less" rel="stylesheet/less">
   .index {
     background: #EFEFEF;
+    overflow: hidden;
   }
 
   .header {
@@ -159,11 +180,13 @@
 
   .goodsBox {
     width: 100%;
-    height: 600px;
+    /*height: 600px;*/
+    height: auto;
     background: #ffffff;
     margin-top: 20px;
     padding-top: 20px;
     box-sizing: border-box;
+    overflow: hidden;
   }
 
   .goodsBox-item {
