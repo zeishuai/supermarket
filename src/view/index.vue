@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <div class="header">零食选购</div>
+    <topTitle @backClick="backClick" :params='title'></topTitle>
     <div id="apps">
       <nav :class="{judge:judge <= 4}">
         <p
@@ -23,17 +23,19 @@
         </li>
       </ul>
     </div>
-    <footerTab @footerClick="goUrl"></footerTab>
+    <footerTab @footerClick="goUrl" :params='active'></footerTab>
   </div>
 </template>
 <script>
   import footerTab from "../components/footerTab";
+  import topTitle from "../components/topTitle"
 
   export default {
-    components: {footerTab},
+    components: {footerTab,topTitle},
     name: "index",
     data() {
       return {
+        title:'零食选购',
         active: 0,
         arrs: ["休闲食品", "辣条类", "肉食类", "面包类", '火腿肠', '饮料', '速食类',],
         judge: '1',
@@ -66,6 +68,10 @@
       };
     },
     methods: {
+      // 返回
+      backClick(v) {
+        this.$router.push({path:'/'})
+      },
       toggle(index) {
         this.active = index;
       },
@@ -74,7 +80,7 @@
       },
       goUrl(val) {
         if (val === 0) {
-           this.$router.push({path:'index'})
+           this.$router.push({path:'/'})
         } else if (val === 1) {
           this.$router.push({path:'express'})
         } else if (val === 2) {

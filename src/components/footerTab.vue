@@ -3,7 +3,7 @@
     <ul>
       <li @click="footerClick(index)" v-for="(item,index) in footerList" :key="item.id">
         <p :class="'icon'+index"></p>
-        <p>{{item.text}}</p>
+        <p :class="{active:index == params}">{{item.text}}</p>
       </li>
     </ul>
   </div>
@@ -12,6 +12,12 @@
 <script>
   export default {
     name: "footerTab",
+    props: {
+      params: {
+        type: Number,
+        default: 0
+      }
+    },
     data() {
       return {
         footerList: [
@@ -51,6 +57,9 @@
     position: fixed;
     bottom: 0;
     right: 0;
+  }
+  .active{
+    color: #e26411;
   }
 
   .footerBox ul {

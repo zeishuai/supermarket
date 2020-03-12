@@ -28,7 +28,7 @@
       <button class="bottombtn2" @click="delGoods">删除</button>
       <button class="bottombtn1" @click="buyGoods">￥{{sum}}&nbsp;结算</button>
     </div>
-    <footerTab @footerClick="goUrl"></footerTab>
+    <footerTab @footerClick="goUrl" :params='active'></footerTab>
   </div>
 </template>
 
@@ -40,6 +40,8 @@
     components:{topTitle,footerTab},
     data() {
       return {
+        active: 2,
+        title:'购物车',
         shoppingList: [
           {
             imgurl: "https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=206733228,1637722865&fm=26&gp=0.jpg",
@@ -84,14 +86,13 @@
         ],
         allSelect: false,
         sum: 0,
-        title: '购物车'
       }
     },
     methods: {
       // 路由
       goUrl(val) {
         if (val === 0) {
-          this.$router.push({path:'index'})
+          this.$router.push({path:'/'})
         } else if (val === 1) {
           this.$router.push({path:'express'})
         } else if (val === 2) {
@@ -102,7 +103,7 @@
       },
       // 返回
       backClick(v) {
-        this.$router.push({path:'/index'})
+        this.$router.push({path:'/'})
       },
       selectGoods(item) {
         item.isSelect = !item.isSelect
