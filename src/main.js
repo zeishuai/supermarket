@@ -5,9 +5,15 @@ import App from './App'
 import router from './router'
 import 'amfe-flexible'
 
-import MintUI from 'mint-ui'
-import 'mint-ui/lib/style.css'
-Vue.use(MintUI)
+// import MintUI from 'mint-ui'
+// import 'mint-ui/lib/style.css'
+// Vue.use(MintUI)
+import Vant from 'vant';
+import 'vant/lib/index.css';
+// import LyTab from 'ly-tab'
+// Vue.use(LyTab)
+Vue.use(Vant)
+
 
 Vue.config.productionTip = false
 

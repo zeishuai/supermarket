@@ -1,15 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import index from '@/view/index'
+import shoppingCart from '@/view/shoppingCart'
+import {route} from "vant/lib/utils/router";
 
 Vue.use(Router)
-
-export default new Router({
+const router = new Router({
+  mode: 'history',  //去掉url中的#
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/index',
+      name: 'index',
+      component: index
+    },
+    {
+      path: '/shoppingCart',
+      name: 'shoppingCart',
+      component: shoppingCart
     }
   ]
 })
+  export default router
