@@ -4,6 +4,7 @@ import index from '@/view/index'
 import shoppingCart from '@/view/shoppingCart'
 import my from '@/view/my'
 import express from '@/view/express'
+import payment from "@/view/payment";
 
 Vue.use(Router)
 const router = new Router({
@@ -28,7 +29,12 @@ const router = new Router({
       path: '/express',
       name: 'express',
       component: express
+    },
+    {
+      path: '/payment',
+      name: 'payment',
+      component: payment
     }
   ]
 })
-  export default router
+export default router
