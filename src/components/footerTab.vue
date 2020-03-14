@@ -59,7 +59,8 @@
     right: 0;
   }
   .active{
-    color: #e26411;
+    /*color: #e26411;*/
+    color: #6E76FB;
   }
 
   .footerBox ul {

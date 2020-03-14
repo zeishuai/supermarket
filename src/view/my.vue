@@ -41,10 +41,10 @@
           <!--          </van-grid>-->
           <van-grid :border="false" icon-size="40px">
             <van-grid-item icon="gold-coin-o" to="payment" text="待付款" />
-            <van-grid-item icon="bag-o" text="待收货" />
-            <van-grid-item icon="comment-circle-o" text="待评价" />
-            <van-grid-item icon="refund-o" text="退货/退款" />
-            <van-grid-item icon="notes-o" text="我的订单" />
+            <van-grid-item icon="bag-o" to="receiving" text="待收货" />
+            <van-grid-item icon="comment-circle-o" to="evaluated" text="待评价" />
+            <van-grid-item icon="refund-o" to="getGoodsPrice" text="退货/退款" />
+            <van-grid-item icon="notes-o" to="myOrder" text="我的订单" />
             <van-grid-item icon="bill-o" text="储值活动" />
           </van-grid>
         </div>
@@ -53,9 +53,9 @@
         <p class="mySnacks-title">我的快递</p>
         <div>
           <van-grid :border="false" icon-size="40px">
-            <van-grid-item icon="paid" text="待付款" />
-            <van-grid-item icon="exchange" text="等待发达" />
-            <van-grid-item icon="records" text="订单记录" />
+            <van-grid-item icon="paid" to="kdPayment" text="待付款" />
+            <van-grid-item icon="exchange" to="kdDdFh" text="等待发达" />
+            <van-grid-item icon="records" to="kdRecording" text="订单记录" />
           </van-grid>
         </div>
       </div>

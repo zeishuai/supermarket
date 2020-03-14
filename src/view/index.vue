@@ -60,22 +60,22 @@
           text: '康师傅方便面大桶康师傅方便面大桶',
           url: 'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=206733228,1637722865&fm=26&gp=0.jpg'
         }, {
-          id: '5',
+          id: '115',
           value: 1,
           text: '康师傅方便面大桶康师傅方便面大桶',
           url: 'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=206733228,1637722865&fm=26&gp=0.jpg'
         },{
-          id: '5',
+          id: '51',
           value: 1,
           text: '康师傅方便面大桶康师傅方便面大桶',
           url: 'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=206733228,1637722865&fm=26&gp=0.jpg'
         },{
-          id: '5',
+          id: '11',
           value: 1,
           text: '康师傅方便面大桶康师傅方便面大桶',
           url: 'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=206733228,1637722865&fm=26&gp=0.jpg'
         },{
-          id: '5',
+          id: '15',
           value: 1,
           text: '康师傅方便面大桶康师傅方便面大桶',
           url: 'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=206733228,1637722865&fm=26&gp=0.jpg'
@@ -159,16 +159,17 @@
     font-size: 32px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding: 10px;
+    /*padding: 10px;*/
     box-sizing: border-box;
     width: 190px;
     margin: 5px;
   }
 
   #apps p.active {
-    background-color: #f0ad4e;
+    /*background-color: #f0ad4e;*/
     color: white;
     border-radius: 10px;
+    background-color: #6E76FB;
   }
 
   /* scroll-view 不显示滚动条 */
